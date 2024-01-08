@@ -1,0 +1,14 @@
+.cls::after{
+    display: block;
+    content: " ";
+    height: 2.5px;
+    background: aliceblue;
+    border-radius: 3px;
+    /* transform-origin: right; */
+    transform: scale(0,1);
+    transition: all ease-in-out 500ms;
+    margin-top: 5px;
+}
+.cls:hover:after{
+    transform: scale(1,1);
+}

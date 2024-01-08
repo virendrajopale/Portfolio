@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.31983627.css",
+    "main.js": "/static/js/main.ca3de98b.js",
+    "static/js/787.a8a21f2e.chunk.js": "/static/js/787.a8a21f2e.chunk.js",
+    "static/media/news.png": "/static/media/news.c3bc792090fa76e47c82.png",
+    "static/media/textutils.png": "/static/media/textutils.6489835fc3ba0b7bd3dc.png",
+    "static/media/weather.png": "/static/media/weather.ed2fe13943fff8b2265b.png",
+    "static/media/mdb.svg": "/static/media/mdb.9fa546c6a6dfddc0b151942d6f27c028.svg",
+    "static/media/reactjs.svg": "/static/media/reactjs.4f7abcc3a4d5c559d9eb61b5f2dd5a87.svg",
+    "static/media/cpplang.svg": "/static/media/cpplang.6e731ebced6403a1e26ed0e65a8dc9da.svg",
+    "static/media/csslang.svg": "/static/media/csslang.ccdd9d9be79fe26dd0a8e24d8334a0f0.svg",
+    "static/media/tail.svg": "/static/media/tail.78c92cee54f7e897c18b939b258e181c.svg",
+    "index.html": "/index.html",
+    "main.31983627.css.map": "/static/css/main.31983627.css.map",
+    "main.ca3de98b.js.map": "/static/js/main.ca3de98b.js.map",
+    "787.a8a21f2e.chunk.js.map": "/static/js/787.a8a21f2e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31983627.css",
+    "static/js/main.ca3de98b.js"
+  ]
+}
