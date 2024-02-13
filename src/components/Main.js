@@ -25,7 +25,7 @@ const Main = () => {
           <div className=' text-center flex flex-col gap-6'>
 
             <p className=' text-4xl'>Hey There,I'm</p>
-            <h1 className='text-4xl sm:text-7xl font-bold  stroke-2 stroke-[#243c5a] cls'  >
+            <h1 className='text-4xl sm:text-7xl font-bold  stroke-2 stroke-[#243c5a] text-white cls'  >
               VIRENDRA JOPALE
             </h1>
 

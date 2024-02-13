@@ -3,7 +3,17 @@ import {FaBars,FaTimes} from 'react-icons/fa'
 import {Link } from 'react-scroll'
 
 import './Main.css'
+import { MdDarkMode, MdLightMode } from 'react-icons/md'
 const Navbar = (props) => {
+  const [theme, setTheme] = useState(false)
+  const handlemode=()=>{
+    let clr=theme?'white':'#27374D';
+    let txtclr=theme?'black':'white';
+    document.body.style.backgroundColor=clr;
+    document.body.style.color=txtclr;
+    setTheme(!theme)
+  }
+
   const links=[
     {
       id:1,
@@ -54,9 +64,11 @@ const Navbar = (props) => {
               </li>
           ))
         }
-         
+     
       </ul>
-        
+      <div onClick={handlemode} className=' duration-300 cursor-pointer'>{
+      theme?<MdLightMode size={30}/>:<MdDarkMode size={30}/>
+      }</div>
       <div onClick={()=>setNav(!nav)} className={`pr-4  cursor-pointer  md:hidden z-10`} >
         {
           nav?<FaTimes size={30}/>:

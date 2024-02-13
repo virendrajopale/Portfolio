@@ -1,39 +1,41 @@
 import React from 'react'
 import news from '../assets/news.png'
 
-import textutils from '../assets/textutils.png'
+import ecom from '../assets/ecom.png'
 import weather from '../assets/weather.png'
+import todo from '../assets/todo.png'
 import { MdArrowForwardIos,MdArrowBackIos } from "react-icons/md";
 const Portfolio = () => {
   const port = [
     {
       id: 1,
       name: "Ecommerce Website",
-      src: "https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2023/07/03180345/The-Ultimate-Guide-to-Ecommerce-Website-Development-in-2023.jpg",
-      code: "",
-      demo:"https://virendrajopale.github.io/TextUtils/"
+      src: ecom,
+      code: "https://github.com/virendrajopale/ecommerce-web",
+      demo:"https://e-commerce-57a2.onrender.com/"
     },
     {
       id: 2,
+      name: "To Do MERN App",
+      src: todo,
+      code: "https://github.com/virendrajopale/todo-web-app",
+      demo:"https://todo-web-app-mern.onrender.com/"
+    },
+    {
+      id: 3,
       name: "Weather Website",
       src: weather,
       code: "https://github.com/virendrajopale/weather-web-app-react.git",
       demo:"https://github.com/virendrajopale/weather-web-app-react.git"
     },
     {
-      id: 3,
+      id: 4,
       name: "News Website",
       src: news,
       code: "https://github.com/virendrajopale/news-web-react.git",
       demo:"https://github.com/virendrajopale/news-web-react.git"
     },
-    {
-      id: 4,
-      name: "Text Utils",
-      src: textutils,
-      code: "https://github.com/virendrajopale/Text-Utils.git",
-      demo:"https://virendrajopale.github.io/TextUtils/"
-    },
+    
    
   ]
 

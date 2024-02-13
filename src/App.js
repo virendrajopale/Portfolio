@@ -14,7 +14,7 @@ import Contact from './components/Contact';
 function App() {
 
   return (
-    <div className='text-black'>
+    <div className=''>
 
       <Navbar />
       <Main />
