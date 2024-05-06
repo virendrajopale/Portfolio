@@ -15,15 +15,15 @@ const About = () => {
                 About
               </p>
             </div>
-            <p className='text-xl mt-10 text-justify'>I'm <bold className="font-bold">Virendra Jopale</bold> , a passionate 3rd Year <bold className=" font-bold">Information Technology</bold>  Engineer at Government College of Engineering, Karad, Maharashtra, specializing in frontend and backend web development. I am driven by an insatiable curiosity for technology and a relentless pursuit of excellence in software engineering.
+            <p className='text-xl mt-10 text-justify'>I'm <bold className="font-bold animate-pulse">Virendra Jopale</bold> , a passionate 3rd Year <bold className=" font-bold animate-pulse">Information Technology</bold>  Engineer at Government College of Engineering, Karad, Maharashtra, specializing in frontend and backend web development. I am driven by an insatiable curiosity for technology and a relentless pursuit of excellence in software engineering.
             </p>
             <br />
             <p className='text-xl  text-justify'>
               I've cultivated essential soft skills like time management, leadership, and teamwork, shaping me into a collaborative and efficient team player. Proficient in an array of technologies, I wield expertise in <bold className="font-bold">JavaScript (ES6,React Js), Node.js, Express.js, MongoDB, proficiency in Tailwind CSS, and HTML.</bold>  I showcase my practical applications of these skills on my GitHub profile, offering tangible evidence of my capabilities in software development.
             </p>
             <br />
-            <p className='text-xl text-justify'>I engage actively on platforms like <bold className="font-bold"> <a href="https://leetcode.com/virendrajopale/">Leetcode</a></bold> to refine my problem-solving acumen, demonstrating my commitment to constant learning and growth. My quick learning ability enables me to swiftly adapt to new challenges and technologies, ensuring efficiency and adaptability in every project I undertake.
-              I am currently seeking opportunities as a Backend Developer to leverage my skills and contribute effectively in this dynamic field. My <bold className="font-bold"> <a href="https://www.linkedin.com/in/virendra-jopale-398b09229/">LinkedIn</a></bold> profile is open for professional connections and discussions regarding potential collaborations or opportunities. </p>
+            <p className='text-xl text-justify'>I engage actively on platforms like <bold className="font-bold animate-pulse"> <a href="https://leetcode.com/virendrajopale/ " >Leetcode</a></bold> to refine my problem-solving acumen, demonstrating my commitment to constant learning and growth. My quick learning ability enables me to swiftly adapt to new challenges and technologies, ensuring efficiency and adaptability in every project I undertake.
+              I am currently seeking opportunities as a Backend Developer to leverage my skills and contribute effectively in this dynamic field. My <bold className="font-bold animate-pulse"> <a href="https://www.linkedin.com/in/virendra-jopale-398b09229/">LinkedIn</a></bold> profile is open for professional connections and discussions regarding potential collaborations or opportunities. </p>
 
 
 

@@ -22,7 +22,7 @@ const Navbar = (props) => {
     },
     {
       id:2,
-      link:'about',
+      link:'portfolio',
 
     },
     {
@@ -31,7 +31,7 @@ const Navbar = (props) => {
     },
     {
       id:4,
-      link:'portfolio'
+      link:'about'
     },
     {
       id:4,
@@ -46,7 +46,7 @@ const Navbar = (props) => {
     <div className='flex justify-center '> 
 
  
-    <div className={`flex justify-center items-center  h-20 fixed w-[99%]  m-auto   px-4  border-spacing-3 rounded-md  duration-500 z-20 `}>
+    <div className={`flex bg-white/30 backdrop-blur-md justify-center items-center  h-15  fixed max-w-screen-lg   mx-auto w-screen rounded-b-xl  px-4  border-spacing-3  duration-500 z-20 `}>
     
 
         {/* <h1 className='text-5xl font-sign hover:font-extrabold duration-300 cursor-pointer '>Viru</h1> */}

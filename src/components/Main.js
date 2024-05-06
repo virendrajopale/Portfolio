@@ -6,10 +6,10 @@ import './Main.css'
 import SocialLink from './SocialLink'
 
 const Main = () => {
-
+ 
   return (
     <div name="home"
-      className='h-screen flex justify-center items-center  '>
+      className=' h-screen flex justify-center items-center  '>
       <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-screen h-full relative'>
 
         <div className=" absolute top-0  bg-purple-300 w-[70%] h-[70%] rounded-4xl mix-blend-multiply filter blur-2xl  "> </div>

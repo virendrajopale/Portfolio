@@ -1,6 +1,6 @@
 import React from "react";
 import html from "../assets/html.png";
-import clng from "../assets/clng.png";
+import redux from "../assets/redux.svg";
 import jsimg from "../assets/jsimg.png";
 import mdb from "../assets/mdb.svg";
 import nodejss from "../assets/nodejss.png";
@@ -10,12 +10,7 @@ import tail from "../assets/tail.svg";
 import csslang from "../assets/csslang.svg";
 const Skills = () => {
   const Lnaguags = [
-    {
-      id: 1,
-      lang: "C",
-      url: clng,
-      style: "435B66",
-    },
+    
     {
       id: 2,
       lang: "C++",
@@ -64,6 +59,12 @@ const Skills = () => {
       url: mdb,
       style: "A6CF98",
     },
+    {
+      id: 10,
+      lang: "Redux",
+      url: redux,
+      style: "A6CF98",
+    },
   ];
   return (
     <div name="skills" className="w-full text-center mt-28 ">
@@ -83,10 +84,11 @@ const Skills = () => {
             
               <div key={lang.id} className="flex  items-center justify-center gap-2 hover:scale-105 duration-500" >
                 <div
-                  className={` relative flex items-center justify-center border border-[#{${lang.style}}]   
+                  className={` relative flex flex-col items-center justify-center border border-[#{${lang.style}}]   
           h-52 w-80 rounded  before:absolute before:inset-0 before:h-full
           before:w-full before:bg-[#${lang.style}]  before:blur-lg  before:translate-x-3  before:translate-y-1`}>
                   <img src={lang.url} className=" h-28 font-bold text-white z-10" alt="img"/>
+                  <p className="hover:scale-105 duration-300">{lang.lang}</p>
                 </div>
               </div>
             ))}
