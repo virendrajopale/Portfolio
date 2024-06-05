@@ -41,7 +41,7 @@ const SocialLink = () => {
           <BsFillPersonLinesFill size={30} className='hover:text-white duration-300' />
         </>
       ),
-      href: "https://drive.google.com/file/d/1eJV_ksIyOZ-vtYi9QBqOSrVe6WjBZvZe/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/10p3QW_0YoqQrXxZGq5Zjb5CuCHKX6wUR/view?usp=drivesdk",
       download: true,
 
     },
