@@ -3,11 +3,14 @@ import React from 'react'
 
 import './Main.css'
 
-import SocialLink from './SocialLink'
+import SocialLink from '../components/SocialLink'
+import transition from '../components/transition'
+
 
 const Main = () => {
  
   return (
+    <>
     <div name="home"
       className=' h-screen flex justify-center items-center  '>
       <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-screen h-full relative'>
@@ -56,7 +59,11 @@ const Main = () => {
 
       </div>
     </div>
+   
+
+
+    </>
   )
 }
 
-export default Main
+export default  transition(Main)

@@ -25,7 +25,8 @@ module.exports = {
     },
     fontFamily:{
       sign:["Great Vibes"],
-      Caveat:["Caveat"]
+      Caveat:["Caveat"],
+      Gruppo:['Gruppo']
     }
   },
   plugins: [],

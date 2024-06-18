@@ -3,12 +3,17 @@ import news from '../assets/news.png'
 
 import ecom from '../assets/ecom.png'
 import weather from '../assets/c2c22.png'
+import ecom_filter from '../assets/ecom-filters.png'
 import todo from '../assets/todo.png'
+import shelf from '../assets/personal-bookshelf.png'
+import kanban from '../assets/kanban-todo.png'
 import { MdArrowForwardIos,MdArrowBackIos } from "react-icons/md";
+import transition from '../components/transition'
 
-import {gsap} from 'gsap'
-import {ScrollTrigger} from 'gsap/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
+
+
+
+
 const Portfolio = () => {
 
   const port = [
@@ -27,26 +32,47 @@ const Portfolio = () => {
       demo:"https://main--connect2campuus.netlify.app/user/login"
     },
     {
+      id: 4,
+      name: "Ecommerce Filters React",
+      src: ecom_filter,
+      code: "https://github.com/virendrajopale/Ecommerce-Filters.git",
+      demo:"https://ecommerce-filters-two.vercel.app/"
+    },
+    {
       id: 2,
       name: "To Do MERN App",
       src: todo,
       code: "https://github.com/virendrajopale/todo-web-app",
       demo:"https://todo-web-app-mern.onrender.com/"
     },
+    
     {
-      id: 4,
+      id: 5,
+      name: "Kanban To-Do",
+      src: kanban,
+      code: "https://github.com/virendrajopale/drag-drop-todo-kanban.git",
+      demo:"https://drag-drop-todo-kanban.vercel.app/"
+    },
+    {
+      id: 6,
+      name: "Personal Bookshelf",
+      src: shelf,
+      code: "https://github.com/virendrajopale/personal-bookshelf.git",
+      demo:"https://personal-bookshelf-9vf7vncpj-virus-projects-c0405544.vercel.app/"
+    },
+    {
+      id: 7,
       name: "News Website",
       src: news,
       code: "https://github.com/virendrajopale/news-web-react.git",
       demo:"https://github.com/virendrajopale/news-web-react.git"
     },
-    
    
   ]
-   gsap.to(".box",{
-    x:400
-   })
+  
   return (
+<>
+
 
     <div name="portfolio" className=' w-full h-full'>
       <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full relative'>
@@ -100,7 +126,8 @@ const Portfolio = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
-export default Portfolio
+export default transition(Portfolio)

@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import {FaBars,FaTimes} from 'react-icons/fa'
-import {Link } from 'react-scroll'
+import {Link } from 'react-router-dom'
 
-import './Main.css'
+import '../Pages/Main.css'
 import { MdDarkMode, MdLightMode } from 'react-icons/md'
 const Navbar = (props) => {
   const [theme, setTheme] = useState(false)
@@ -17,32 +17,38 @@ const Navbar = (props) => {
   const links=[
     {
       id:1,
-      link:'home',
+      link:'/',
+      name:"Virendra"
 
     },
     {
       id:2,
-      link:'portfolio',
+      link:'/portfolio',
+      name:"My Projects"
 
     },
     {
       id:3,
-      link:'skills'
+      link:'/skills',
+      name:"My Skills"
     },
     {
       id:4,
-      link:'about'
+      link:'/about',
+      name:"About Me"
     },
     {
       id:4,
-      link:'contact',
-      url:'/contact'
+      link:'/contact',
+      url:'/contact',
+      name:"Get In Touch"
     },
   ]
   const [nav, setNav] = useState(false)
 
   
   return (
+    <>
     <div className='flex justify-center '> 
 
  
@@ -58,8 +64,8 @@ const Navbar = (props) => {
              hover:scale-105 hover:font-bold duration-200 capitalize
               p-3 m-2 hover:text-white`}>
              
-              <Link to={link.link} smooth duration={500}> 
-              {link.link}
+              <Link to={link.link} > 
+              {link.name}
               </Link>
               </li>
           ))
@@ -81,10 +87,10 @@ const Navbar = (props) => {
       <ul className='flex flex-col  justify-center items-center
       absolute top-0 left-0 w-50 h-screen   px-4 bg-white backdrop-blur-sm bg-white/20 rounded-xl '>
        {
-        links.map(({link,id})=>(
-        <li key={id} className='capitalize cursor-pointer px-4 py-6 text-4xl after:w-4 after:bg-slate-500 '> 
-        <Link to={link} smooth duration={700} onClick={()=>setNav(!nav)}> 
-        {link}
+        links.map((link)=>(
+        <li key={link.id} className='capitalize cursor-pointer px-4 py-6 text-4xl after:w-4 after:bg-slate-500 '> 
+        <Link to={link.link}  onClick={()=>setNav(!nav)}> 
+        {link.name}
         </Link>
         </li>
         ))
@@ -93,6 +99,9 @@ const Navbar = (props) => {
       }
     </div>
     </div>
+
+
+    </>
   )
 }
 

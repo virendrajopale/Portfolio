@@ -8,6 +8,8 @@ import cpplang from "../assets/cpplang.svg";
 import reactjs from "../assets/reactjs.svg";
 import tail from "../assets/tail.svg";
 import csslang from "../assets/csslang.svg";
+import transition from "../components/transition";
+
 const Skills = () => {
   const Lnaguags = [
     
@@ -67,7 +69,10 @@ const Skills = () => {
     },
   ];
   return (
-    <div name="skills" className="w-full text-center mt-28 ">
+    <>
+
+
+    <div name="skills" className="w-full text-center  ">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full relative ">
         <div className=" absolute bottom-0 right-0 bg-sky-500 w-[40%] h-[40%] rounded-full mix-blend-multiply filter blur-2xl "> </div>
         <div className=" absolute top-0  bg-yellow-300 w-[70%] h-[70%] rounded-full mix-blend-multiply filter blur-2xl "> </div>
@@ -97,7 +102,8 @@ const Skills = () => {
 
       </div>
     </div>
+    </>
   );
 };
 
-export default Skills;
+export default transition(Skills);

@@ -2,6 +2,7 @@ import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+
 const SocialLink = () => {
   const social = [
     {
@@ -47,6 +48,9 @@ const SocialLink = () => {
     },
   ]
   return (
+    <>
+
+   
     <div className=' z-10'>
       <ul className='flex gap-2 group hover:text-white'>
         {
@@ -63,7 +67,8 @@ const SocialLink = () => {
         }
       </ul>
     </div>
+    </>
   )
 }
 
-export default SocialLink
+export default (SocialLink)

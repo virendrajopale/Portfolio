@@ -1,7 +1,12 @@
 import React from "react";
+import transition from "../components/transition";
+
 
 const Contact = () => {
   return (
+    <>
+
+
     <div name='contact' className="w-full h-full ">
       <div className="flex flex-col p-4 justify-center mx-auto h-full">
         <div className=" pb-8 text-center">
@@ -31,7 +36,8 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
-export default Contact;
+export default transition(Contact);
