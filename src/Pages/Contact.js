@@ -7,12 +7,23 @@ const Contact = () => {
     <>
 
 
-    <div name='contact' className="w-full h-full ">
-      <div className="flex flex-col p-4 justify-center mx-auto h-full">
-        <div className=" pb-8 text-center">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-400  cursor-pointer">Contact Me</p>
-          <p className="Capitalize py-6">Want to work together? I thought you'd never ask! </p>
-        </div>
+    <div name='contact' className="w-full h-full pt-4">
+    <div className="flex flex-col  mx-auto  text-2xl h-full w-[99%] text-white  font-mono   mt-16 p-4 bg-slate-900 backdrop-blur-sm  rounded-xl  ">
+    <div className="flex justify-between items-center">
+                <div className="flex space-x-2 text-red-500">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <p className="text-sm">contact me</p>
+              </div>
+        
+          <div class="mt-4">
+    <p class="text-green-400">$ git commit -m 'Get Connected'</p>
+
+
+  </div>       
+        
         <div className="flex justify-center items-center">
           <form action="https://getform.io/f/fdbd91f2-7997-4043-b1ef-91ce2de42e8c" method="POST" className="flex flex-col w-full md:w-1/2">
             <input

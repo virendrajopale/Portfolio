@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./App.css";
+
 import Navbar from "./components/Navbar";
 import Main from "./Pages/Main";
 import About from "./Pages/About";
@@ -13,7 +13,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 function App() {
   const location = useLocation();
   return (
-    <>
+    <div className=" ">
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
@@ -24,7 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
-    </>
+    </div>
   );
 }
 

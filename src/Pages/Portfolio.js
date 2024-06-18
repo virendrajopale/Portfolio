@@ -1,12 +1,5 @@
 import React from 'react'
-import news from '../assets/news.png'
 
-import ecom from '../assets/ecom.png'
-import weather from '../assets/c2c22.png'
-import ecom_filter from '../assets/ecom-filters.png'
-import todo from '../assets/todo.png'
-import shelf from '../assets/personal-bookshelf.png'
-import kanban from '../assets/kanban-todo.png'
 import { MdArrowForwardIos,MdArrowBackIos } from "react-icons/md";
 import transition from '../components/transition'
 
@@ -20,28 +13,28 @@ const Portfolio = () => {
     {
       id: 1,
       name: "Ecommerce Website",
-      src: ecom,
+      src: 'https://res.cloudinary.com/dbetaaewo/image/upload/f_auto,q_auto/v1/portfolio/pl3grhkx0sineh1qaxft',
       code: "https://github.com/virendrajopale/ecommerce-web",
       demo:"https://e-commerce-57a2.onrender.com/"
     },
     {
       id: 3,
       name: "Connect2Campus",
-      src: weather,
+      src: 'https://res.cloudinary.com/dbetaaewo/image/upload/f_auto,q_auto/v1/portfolio/zotqgepgmi3dnr9sqb4l',
       code: "https://github.com/virendrajopale/Campus2Campus.git",
       demo:"https://main--connect2campuus.netlify.app/user/login"
     },
     {
       id: 4,
       name: "Ecommerce Filters React",
-      src: ecom_filter,
+      src: 'https://res.cloudinary.com/dbetaaewo/image/upload/f_auto,q_auto/v1/portfolio/qkz3flfoxjtibwc4iadi',
       code: "https://github.com/virendrajopale/Ecommerce-Filters.git",
       demo:"https://ecommerce-filters-two.vercel.app/"
     },
     {
       id: 2,
       name: "To Do MERN App",
-      src: todo,
+      src: 'https://res.cloudinary.com/dbetaaewo/image/upload/f_auto,q_auto/v1/portfolio/zyqxlppz4eitkkmvvyvf',
       code: "https://github.com/virendrajopale/todo-web-app",
       demo:"https://todo-web-app-mern.onrender.com/"
     },
@@ -49,21 +42,21 @@ const Portfolio = () => {
     {
       id: 5,
       name: "Kanban To-Do",
-      src: kanban,
+      src: 'https://res.cloudinary.com/dbetaaewo/image/upload/f_auto,q_auto/v1/portfolio/lwjafoa4bb65ihnjcpuk',
       code: "https://github.com/virendrajopale/drag-drop-todo-kanban.git",
       demo:"https://drag-drop-todo-kanban.vercel.app/"
     },
     {
       id: 6,
       name: "Personal Bookshelf",
-      src: shelf,
+      src: 'https://res.cloudinary.com/dbetaaewo/image/upload/f_auto,q_auto/v1/portfolio/hq04hrnchkrpgrwmmdxi',
       code: "https://github.com/virendrajopale/personal-bookshelf.git",
       demo:"https://personal-bookshelf-9vf7vncpj-virus-projects-c0405544.vercel.app/"
     },
     {
       id: 7,
       name: "News Website",
-      src: news,
+      src: 'https://res.cloudinary.com/dbetaaewo/image/upload/f_auto,q_auto/v1/portfolio/vuwuwzmlbszxtd135fqd',
       code: "https://github.com/virendrajopale/news-web-react.git",
       demo:"https://github.com/virendrajopale/news-web-react.git"
     },
@@ -74,25 +67,39 @@ const Portfolio = () => {
 <>
 
 
-    <div name="portfolio" className=' w-full h-full'>
-      <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full relative'>
-        <div className=" absolute top-20 right-0 bg-[#44ce46] w-[70%] h-[70%] rounded-full mix-blend-multiply filter blur-xl "> </div>
-      <div className=" absolute top-0  bg-purple-300 w-[70%] h-[70%] rounded-full  filter blur-2xl  "> </div>
-      <div className=" absolute bottom-0 align-middle bg-red-500 w-[70%] h-[70%] rounded-full  filter blur-2xl  "> </div>
-       
-        <div className='box max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full text-center   mt-16 px-4 bg-white backdrop-blur-sm bg-white/20 rounded-xl'>
-          <div className='pb-8'>
-            <p className='text-4xl font-bold inline border-b-4 border-gray-400 hover:text-white duration-300 cursor-pointer'>Portfolio</p>
-            <p className='py-6'>Check Out My Work Right Here</p>
-          </div>
-          <div className='grid sm:grid-cols-2 md:grid-cols-2 px-12 sm:p-0 gap-8'>
+    <div name="portfolio" className=' w-full h-full pt-4'>
+      
+    <div className="flex flex-col  mx-auto  text-2xl h-full w-[99%] text-white  font-mono   mt-16 p-4 bg-slate-900 backdrop-blur-sm  rounded-xl  ">
+    <div className="flex justify-between items-center">
+                <div className="flex space-x-2 text-red-500">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <p className="text-sm">projects</p>
+              </div>
+        
+          <div class="mt-4">
+    <p class="text-green-400">$ npm install Portfolio</p>
+    <p class="text-white">Check Out My Work Right Here</p>
+
+  </div>
+          <div className='grid sm:grid-cols-2 md:grid-cols-2  sm:p-0 gap-8'>
             {
 
               port.map((prt) => (
                 <div className='relative'>
 
-                  <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
+                {/* <div className="flex flex-col  mx-auto   g-black text-2xl h-full w-[99%] text-white  font-mono   mt-16 p-4 bg-black backdrop-blur-sm  rounded-xl"> */}
                     {/* <div class="h-56 w-72"> */}
+                    <div className="flex justify-between items-center">
+                <div className="flex space-x-2 text-red-500">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <p className="text-sm">projects</p>
+              </div>
                       <img class=" transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                        src={`${prt.src}`} alt="" />
                     {/* </div> */}
@@ -100,7 +107,7 @@ const Portfolio = () => {
                     <div class="absolute inset-0 flex translate-y-[30%] flex-col gap-3 items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
                       <h1 class="  text-3xl font-bold text-white">{prt.name}</h1>
                       <div className='flex gap-4'>
-
+                  
                       <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                       <a href={prt.code} target='_blank' rel="noreferrer" className='flex justify-center items-center'>
                         <MdArrowBackIos className='font-bold'/>
@@ -117,7 +124,7 @@ const Portfolio = () => {
                         </button>
                       </div>
                     </div>
-                  </div>
+                  {/* </div> */}
                 </div>
               ))
             }
@@ -125,7 +132,7 @@ const Portfolio = () => {
 
         </div>
       </div>
-    </div>
+    {/* </div> */}
     </>
   )
 }
