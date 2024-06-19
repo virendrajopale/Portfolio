@@ -2,17 +2,17 @@
   --bg-color:#ffffff;
   --text-color:#333333;
   --heading-color:#444444;
-  --border-color:#0F172A
+  --border-color:green;
 
 }
 [data-theme='dark']{
   --bg-color:#0F172A;
   --text-color:#ffffff;
   --heading-color:#dddddd;
-  --border-color:#333333;
+  --border-color:#ffffff;
 }
 body{
-  background-color: black;
+  background-color: #F6F1E9;
 }
 .main-border{
   border: 1px solid var(--border-color);

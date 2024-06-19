@@ -53,7 +53,7 @@ const {theme,toggleTheme}=useTheme()
     <div className='flex justify-center '> 
 
  
-    <div className={`main-border flex bg-slate-900 text-white justify-between items-center  h-15  fixed   w-[97%]  rounded-xl  px-4  border-spacing-3  duration-500 z-20 `}>
+    <div className={`main-border flex bg-slate-900 text-white justify-between items-center  h-16  fixed   w-[97%]  rounded-xl  px-4  border-spacing-3  duration-500 z-20 `}>
     
     <div className="flex justify-between items-center">
                 <div className="flex space-x-2 text-red-500">
@@ -105,7 +105,7 @@ const {theme,toggleTheme}=useTheme()
               </div>
        {
         links.map((link)=>(
-        <li key={link.id} className='capitalize cursor-pointer px-4 py-6 text-4xl after:w-4 after:bg-slate-500 '> 
+        <li key={link.id} className='capitalize cursor-pointer px-4 py-6 text-4xl after:w-4 after:bg-slate-500 hover:text-green-400'> 
         <Link to={link.link}  onClick={()=>setNav(!nav)}> 
         {link.name}
         </Link>
