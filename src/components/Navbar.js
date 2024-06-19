@@ -4,16 +4,17 @@ import {Link } from 'react-router-dom'
 
 import '../Pages/Main.css'
 import { MdDarkMode, MdLightMode } from 'react-icons/md'
+import { useTheme } from '../Context/theme-context'
 const Navbar = (props) => {
-  const [theme, setTheme] = useState(false)
-  const handlemode=()=>{
-    let clr=theme?'white':'#0C1844';
-    let txtclr=theme?'black':'white';
-    document.body.style.backgroundColor=clr;
-    document.body.style.color=txtclr;
-    setTheme(!theme)
-  }
-
+  // const [theme, setTheme] = useState(false)
+  // const handlemode=()=>{
+  //   let clr=theme?'white':'#0C1844';
+  //   let txtclr=theme?'black':'white';
+  //   document.body.style.backgroundColor=clr;
+  //   document.body.style.color=txtclr;
+  //   setTheme(!theme)
+  // }
+const {theme,toggleTheme}=useTheme()
   const links=[
     {
       id:1,
@@ -52,7 +53,7 @@ const Navbar = (props) => {
     <div className='flex justify-center '> 
 
  
-    <div className={`flex bg-slate-900 text-white justify-between items-center  h-15  fixed   w-[99%]  rounded-b-xl  px-4  border-spacing-3  duration-500 z-20 `}>
+    <div className={`main-border flex bg-slate-900 text-white justify-between items-center  h-15  fixed   w-[97%]  rounded-xl  px-4  border-spacing-3  duration-500 z-20 `}>
     
     <div className="flex justify-between items-center">
                 <div className="flex space-x-2 text-red-500">
@@ -69,7 +70,7 @@ const Navbar = (props) => {
           links.map((link)=>(
             <li key={link.id} className={`px-4 cursor-pointer text-xl
              hover:scale-105 hover:font-bold duration-200 capitalize
-              p-3 m-2 hover:text-white font-bold`}>
+              p-3 m-2 hover:text-green-400 font-bold`}>
              
               <Link to={link.link} > 
               {link.name}
@@ -79,9 +80,10 @@ const Navbar = (props) => {
         }
      
       </ul>
-      <div onClick={handlemode} className=' duration-300 cursor-pointer'>{
-      theme?<MdLightMode size={30}/>:<MdDarkMode size={30}/>
+      <div onClick={toggleTheme} className=' duration-300 cursor-pointer'>{
+      theme==='light'?<MdLightMode size={30}/>:<MdDarkMode size={30}/>
       }</div>
+      
       <div onClick={()=>setNav(!nav)} className={`pr-4  cursor-pointer  md:hidden z-10`} >
         {
           nav?<FaTimes size={30}/>:
@@ -120,4 +122,4 @@ const Navbar = (props) => {
   )
 }
 
-export default Navbar
+export default (Navbar)

@@ -5,7 +5,7 @@ import transition from "../components/transition";
 function About() {
   return (
     <div name="about" className=' h-full w-full pt-4'>
-      <div className="flex flex-col  mx-auto  text-2xl h-full w-[99%] text-white  font-mono   mt-16 p-4 bg-slate-900 backdrop-blur-sm  rounded-xl">
+      <div className=" main-border flex flex-col  mx-auto  text-2xl h-full w-[97%] text-white  font-mono   mt-16 p-4 bg-slate-900 backdrop-blur-sm  rounded-xl">
         <div className="flex justify-between items-center">
           <div className="flex space-x-2 text-red-500">
             <div className="w-3 h-3 rounded-full bg-red-500"></div>

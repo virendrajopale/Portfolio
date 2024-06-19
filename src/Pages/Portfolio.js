@@ -69,7 +69,7 @@ const Portfolio = () => {
 
     <div name="portfolio" className=' w-full h-full pt-4'>
       
-    <div className="flex flex-col  mx-auto  text-2xl h-full w-[99%] text-white  font-mono   mt-16 p-4 bg-slate-900 backdrop-blur-sm  rounded-xl  ">
+    <div className="main-border flex flex-col  mx-auto  text-2xl h-full w-[97%] text-white  font-mono   mt-16 p-4 bg-slate-900 backdrop-blur-sm  rounded-xl  ">
     <div className="flex justify-between items-center">
                 <div className="flex space-x-2 text-red-500">
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -81,7 +81,7 @@ const Portfolio = () => {
         
           <div class="mt-4">
     <p class="text-green-400">$ npm install Portfolio</p>
-    <p class="text-white">Check Out My Work Right Here</p>
+    <p class="">Check Out My Work Right Here</p>
 
   </div>
           <div className='grid sm:grid-cols-2 md:grid-cols-2  sm:p-0 gap-8'>

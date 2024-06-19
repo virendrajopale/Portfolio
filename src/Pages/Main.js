@@ -12,7 +12,7 @@ const Main = () => {
       <div name="" className=" h-full  pt-4   ">
          
 
-          <div className="flex flex-col  mx-auto  l g-black text-2xl h-full w-[99%] text-white  font-mono   mt-16 p-4 bg-slate-900 backdrop-blur-sm  rounded-xl">
+          <div className="main-border flex main-border flex-col  mx-auto  g-black text-2xl h-full w-[97%] text-white  font-mono    mt-16 p-4 bg-slate-900 backdrop-blur-sm  rounded-xl">
             {/* <div className=' text-center flex flex-col gap-6'>
 
             <p className=' text-4xl'>Hey There,I'm</p>
