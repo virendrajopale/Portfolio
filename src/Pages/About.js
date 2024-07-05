@@ -25,7 +25,7 @@ function About() {
           {/* <div className=" absolute top-0  bg-purple-300 w-[70%] h-[70%] rounded-full mix-blend-multiply filter blur-2xl  animation-delay-5000"> </div> */}
 
 
-          <p className='text-xl mt-10 text-justify'>I'm <bold className="font-bold animate-pulse bg-green-500">Virendra Jopale</bold> , a passionate 3rd Year <bold className=" font-bold animate-pulse bg-green-500">Information Technology</bold>  Engineer at Government College of Engineering, Karad, Maharashtra, specializing in frontend and backend web development. I am driven by an insatiable curiosity for technology and a relentless pursuit of excellence in software engineering.
+          <p className='text-xl mt-10 text-justify'>I'm <bold className="font-bold animate-pulse bg-green-500">Virendra Jopale</bold> , a passionate Final Year <bold className=" font-bold animate-pulse bg-green-500">Information Technology</bold>  Engineer at Government College of Engineering, Karad, Maharashtra, specializing in frontend and backend web development. I am driven by an insatiable curiosity for technology and a relentless pursuit of excellence in software engineering.
           </p>
           <br />
           <p className='text-xl  text-justify'>
